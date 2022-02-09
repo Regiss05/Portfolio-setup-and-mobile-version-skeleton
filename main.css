@@ -8,7 +8,8 @@ header {
   color: white;
   background-image: url("./Images/illustration-header-mobile.svg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 150px;
+  background-position: right bottom;
 }
 
 .nav-bar {
@@ -20,7 +21,7 @@ header {
 }
 
 .header-title {
-  padding: 3rem 25px;
+  padding: 8rem 25px;
   line-height: 1.2;
 }
 
@@ -39,8 +40,22 @@ header {
   margin-top: 30px;
 }
 
-.logo-plat img {
-  margin-right: 8px;
+.logo-plat ul {
+  display: flex;
+  padding: 0;
+}
+
+.logo-plat ul li {
+  list-style-type: none;
+}
+
+.container section img {
+  width: 100%;
+  margin-top: 50px;
+}
+
+.logo-plat ul li img {
+  margin-right: 20px;
   width: 18px;
 }
 
@@ -52,11 +67,6 @@ header {
   padding-top: 50px;
   border-bottom: 1px black solid;
   padding-bottom: 50px;
-}
-
-.container section img {
-  width: 100%;
-  margin-top: 50px;
 }
 
 .box-bot {
