@@ -59,7 +59,7 @@ header {
   width: 18px;
 }
 
-.container {
+.container-block {
   padding: 20px;
 }
 
@@ -115,8 +115,49 @@ section button {
 }
 
 .about {
-  margin: 0;
-  padding: 20px;
+  margin: 5rem auto;
   background-color: #1c1a19;
   color: white;
+  width: 100%;
+}
+
+.about h3 {
+  font-size: 30px;
+  color: #f55800;
+}
+
+.about p {
+  color: rgb(173, 173, 173);
+}
+
+.about-text {
+  background-image: url("./Images/aboutbg.svg");
+  background-repeat: no-repeat;
+  background-size: 130px;
+  background-position: right 13rem;
+  padding: 5rem 20px;
+}
+
+.about-section {
+  padding-bottom: 5rem;
+  border-bottom: 1px white solid;
+}
+
+.language {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding-bottom: 5rem;
+}
+
+.language ul li {
+  list-style-type: disclosure-closed;
+}
+
+.language ul li ul li {
+  line-height: 1.8;
+}
+
+.language ul li img {
+  width: 20px;
 }
