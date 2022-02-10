@@ -7,9 +7,9 @@
 
 ## Built With
 
-- Major languages
+- Major languages: HTML, CSS
 - Frameworks
-- Technologies used
+- Technologies used: LINT, HINT, LINTHOUSE
 
 ## Live Demo (if available)
 
@@ -27,12 +27,15 @@ To get a local copy up and running follow these simple example steps.
 ### Prerequisites
 
 ### Setup
+npm install
 
 ### Install
 
 ### Usage
 
 ### Run tests
+npx stylelint "**/*.{css,scss}"
+npx hint ./index.html 
 
 ### Deployment
 
@@ -42,21 +45,13 @@ To get a local copy up and running follow these simple example steps.
 
 👤 **Author1**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@regiss05](https://github.com/Regiss05)
+- Twitter: [@regiss05](https://twitter.com/regissmukubiza)
+- LinkedIn: [regiss05](https://www.linkedin.com/in/regiss-mukubiza-1bab841b3/)
 
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
-
-Feel free to check the [issues page](../../issues/).
 
 ## Show your support
 
