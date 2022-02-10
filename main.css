@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Crete+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap');
 
 body {
   font-family: Poppins, sans-serif;
@@ -180,4 +181,17 @@ section button {
 
 .language ul li img {
   width: 20px;
+}
+
+footer {
+  padding: 3rem 20px;
+  text-align: center;
+}
+
+footer h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 25px;
+  color: #172B4D;
+  font-family: 'Inter', sans-serif;
 }
