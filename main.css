@@ -1,26 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Crete+Round&display=swap');
 
 body {
-  font-family: Poppins;
+  font-family: Poppins, sans-serif;
   margin: 0;
-}
-
-.btn:hover {
-  background-color: #fff5e1;
-  border: 1px #f55800 solid;
-  color: #f55800;
-  cursor: pointer;
-}
-
-.btn:disabled {
-  background-color: #f4f1f0;
-  color: black;
-}
-
-.btn:active {
-  background-color: #e05304;
-  color: white;
 }
 
 header {
@@ -38,6 +21,10 @@ header {
   justify-content: space-between;
   padding: 10px 25px;
   align-items: center;
+}
+
+section h2 {
+  font-family: 'Crete Round', serif;
 }
 
 .nav-bar h2 {
@@ -103,10 +90,6 @@ header {
   border: 1px black solid;
   padding: 10px;
   margin-right: 10px;
-}
-
-section h2{
-  font-family: 'Crete Round', serif;
 }
 
 section button {
