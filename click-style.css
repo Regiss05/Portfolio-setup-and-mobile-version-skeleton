@@ -1,3 +1,10 @@
+.btn-style {
+  background-color: #ff6b00;
+  color: white;
+  border: none;
+  padding: 15px;
+}
+
 .btn:hover {
   background-color: #fff5e1;
   border: 1px #f55800 solid;

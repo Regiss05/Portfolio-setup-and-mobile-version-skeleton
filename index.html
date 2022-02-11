@@ -38,7 +38,7 @@
     </header>
     <section class="container">
         <div class="container-block">
-            <h1>My Recent Works</h1>
+            <h2>My Recent Works</h2>
             <section>
                 <img src="./Images/Placeholder.svg" alt="Placeholder">
                 <h2>Multi-Post Stories</h2>
@@ -53,7 +53,7 @@
                     <div>bootstrap</div>
                     <div>Ruby</div>
                 </div>
-                <button class="btn" type="button">See Project</button>
+                <button class="btn btn-style" type="button">See Project</button>
             </section>
             <div class="container-full">
                 <div class="container-poppup">
@@ -67,7 +67,7 @@
                             <div>Ruby</div>
                         </div>
                     </div>
-                    <button class="btn" type="button">See Project</button>
+                    <button class="btn btn-style" type="button">See Project</button>
                 </div>
                 <div class="container-poppup">
                     <div class="pupopp">
@@ -80,7 +80,7 @@
                             <div>Ruby</div>
                         </div>
                     </div>
-                    <button class="btn" type="button">See Project</button>
+                    <button class="btn btn-style" type="button">See Project</button>
                 </div>
                 <div class="container-poppup">
                     <div class="pupopp">
@@ -93,7 +93,7 @@
                             <div>Ruby</div>
                         </div>
                     </div>
-                    <button class="btn" type="button">See Project</button>
+                    <button class="btn btn-style" type="button">See Project</button>
                 </div>
                 <div class="container-poppup">
                     <div class="pupopp">
@@ -106,7 +106,7 @@
                             <div>Ruby</div>
                         </div>
                     </div>
-                    <button class="btn" type="button">See Project</button>
+                    <button class="btn btn-style" type="button">See Project</button>
                 </div>
                 <div class="container-poppup">
                     <div class="pupopp">
@@ -114,14 +114,12 @@
                         <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been
                             the industry's standard</p>
                         <div class="luang">
-                            <ul>
-                                <li>html</li>
-                                <li>bootstrap</li>
-                                <li>Ruby</li>
-                            </ul>
+                            <div>html</div>
+                            <div>bootstrap</div>
+                            <div>Ruby</div>
                         </div>
                     </div>
-                    <button class="btn" type="button">See Project</button>
+                    <button class="btn btn-style" type="button">See Project</button>
                 </div>
                 <div class="container-poppup">
                     <div class="pupopp">
@@ -129,14 +127,12 @@
                         <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been
                             the industry's standard</p>
                         <div class="luang">
-                            <ul>
-                                <li>html</li>
-                                <li>bootstrap</li>
-                                <li>Ruby</li>
-                            </ul>
+                            <div>html</div>
+                            <div>bootstrap</div>
+                            <div>Ruby</div>
                         </div>
                     </div>
-                    <button class="btn" type="button">See Project</button>
+                    <button class="btn btn-style" type="button">See Project</button>
                 </div>
             </div>
         </div>
@@ -149,51 +145,73 @@
                         my work and experience! If you like what you see and have a project you need coded, don’t hestiate
                         to
                         contact me.</p>
-                    <button  class="btn" type="button">Get My Resume</button>
+                    <button  class="btn btn-style" type="button">Get My Resume</button>
                 </div>
                 
             </div>
             <div class="language">
-                <ul>
-                    <li>
-                        Language
-                        <ul>
-                            <li>Javascript</li>
-                            <li>Ruby</li>
-                            <li>Html</li>
-                            <li>Css</li>
-                        </ul>
-                    </li>
-                    <li>
-                        Frameworks
-                        <ul>
-                            <li>Bootstrap</li>
-                            <li>Ruby on Rails</li>
-                            <li>RSPec</li>
-                            <li>CapyBara</li>
-                            <li>Selenium</li>
-                        </ul>
-                    </li>
-                    <li>
-                        Skills
-                        <ul>
-                            <li>Codekit</li>
-                            <li>Github</li>
-                            <li>Codepen</li>
-                            <li>Gitlab</li>
-                            <li>Terminal</li>
-                        </ul>
-                    </li>
-                </ul>
+                <div class="cod-language">
+                    <h4>Language</h4>
+                    <ul>
+                        <li>Ruby</li>
+                        <li>Html</li>
+                        <li>Css</li>
+                    </ul>
+                </div>
+                <div class="framework-cod">
+                    <h4>Frameworks</h4>
+                    <ul>
+                        <li>Bootstrap</li>
+                        <li>Ruby on Rails</li>
+                        <li>RSPec</li>
+                        <li>CapyBara</li>
+                        <li>Selenium</li>
+                    </ul>
+                </div>
+                <div class="cod-skills">
+                    <h4>Skills</h4>
+                    <ul>
+                        <li>Codekit</li>
+                        <li>Github</li>
+                        <li>Codepen</li>
+                        <li>Gitlab</li>
+                        <li>Terminal</li>
+                    </ul>
+                </div>
             </div>
         </section>
     </section>
     <footer>
-        <h1>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h3>
-        <form action="">
-            <input type="text" name="Full name" value="name">
-            <label for="html">html</label>
-        </form>
+        <div class="footer-info">
+            <h3>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h3>
+                <form action="contact">
+                    <input type="text" name="name" placeholder="Full name" required/>
+                    <input type="text" name="email" placeholder="Email address" required/>
+                    <textarea name="comment" id="comment" cols="30" rows="5">Enter your text here</textarea>
+                    <div class="btn-center">
+                        <button class="btn btn-style submit-form" type="button" >Get in touch</button>
+                    </div>
+                </form>
+        </div>
+        <div class="footer-icon">
+            <ul>
+                <li>
+                    <img src="./Images/NormalButton/Tertiary/Disabled.svg" alt="github">
+                </li>
+                <li>
+                    <img src="./Images/NormalButton/Tertiary/Disabled-1.svg" alt="linkedin">
+                </li>
+                <li>
+                    <img src="./Images/NormalButton/Tertiary/Enabled.svg" alt="terk">
+                </li>
+                <li>
+                    <img src="./Images/NormalButton/Tertiary/Disabled-2.svg" alt="twitter">
+                </li>
+                <li>
+                    <img src="./Images/NormalButton/Tertiary/Disabled-3.svg" alt="medium">
+                </li>
+            </ul>
+        </div>
     </footer>
 </body>
 
