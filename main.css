@@ -1,5 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap');
+
 body {
-  font-family: sans-serif;
+  font-family: Poppins, sans-serif;
   margin: 0;
 }
 
@@ -8,7 +12,7 @@ header {
   color: white;
   background-image: url("./Images/illustration-header-mobile.svg");
   background-repeat: no-repeat;
-  background-size: 150px;
+  background-size: 125px;
   background-position: right bottom;
 }
 
@@ -18,6 +22,14 @@ header {
   justify-content: space-between;
   padding: 10px 25px;
   align-items: center;
+}
+
+section h2 {
+  font-family: 'Crete Round', serif;
+}
+
+.nav-bar h2 {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .header-title {
@@ -30,6 +42,7 @@ header {
   font-size: 50px;
   margin: 0;
   padding: 0;
+  font-family: 'Crete Round', serif;
 }
 
 .header-title h3 {
@@ -59,31 +72,41 @@ header {
   width: 18px;
 }
 
-.container {
+.container-block {
   padding: 20px;
+}
+
+.container-block h2 {
+  font-size: 35px;
 }
 
 .container h1 {
   padding-top: 50px;
   border-bottom: 1px black solid;
   padding-bottom: 50px;
+  font-family: 'Crete Round', serif;
+}
+
+.container-full {
+  display: grid;
 }
 
 .box-bot {
   display: flex;
 }
 
-.box-bot div {
+.box-bot ul {
+  display: flex;
+}
+
+.box-bot ul li {
   border: 1px black solid;
   padding: 10px;
   margin-right: 10px;
+  list-style-type: none;
 }
 
 section button {
-  background-color: #ff6b00;
-  color: white;
-  padding: 15px;
-  border: none;
   margin: 10px auto;
   font-weight: bold;
 }
@@ -91,32 +114,188 @@ section button {
 .pupopp {
   background-image: url("./Images/Mask-bg.svg");
   color: white;
-  padding: 30px;
   line-height: 1.7;
 }
 
+.section-art {
+  padding: 0 30px;
+}
+
+.pupopp h2 {
+  font-family: 'Crete Round', serif;
+}
+
 .container-poppup button {
-  background-color: #ff6b00;
   width: 100%;
-  color: white;
-  padding: 15px;
-  border: none;
-  margin-top: -3px;
+  margin: 0;
 }
 
 .luang {
   display: flex;
 }
 
-.luang div {
+.luang ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.luang ul li {
   background-color: rgba(255, 255, 255, 0.342);
   padding: 10px;
   margin-right: 10px;
+  list-style-type: none;
 }
 
 .about {
-  margin: 0;
-  padding: 20px;
+  margin: 5rem auto;
   background-color: #1c1a19;
   color: white;
+  width: 100%;
+}
+
+.about h3 {
+  font-size: 30px;
+  color: #f55800;
+}
+
+.about p {
+  color: rgb(173, 173, 173);
+}
+
+.about-text {
+  background-image: url("./Images/aboutbg.svg");
+  background-repeat: no-repeat;
+  background-size: 110px;
+  background-position: right 19rem;
+  padding: 5rem 20px;
+}
+
+.about-section {
+  padding-bottom: 5rem;
+  border-bottom: 1px white solid;
+}
+
+.about-section h3 {
+  font-family: 'Crete Round', serif;
+}
+
+.language {
+  display: block;
+  padding-bottom: 5rem;
+  text-align: center;
+}
+
+.cod-language h4 {
+  font-weight: bolder;
+  font-size: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+.cod-language h4::before {
+  content: "\25C6";
+  margin-right: 10px;
+  color: #f55800;
+}
+
+.cod-language ul li {
+  list-style-type: none;
+  line-height: 2;
+}
+
+.framework-cod h4 {
+  font-weight: bolder;
+  font-size: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+.framework-cod h4::before {
+  content: "\25A0";
+  margin-right: 10px;
+  color: #f55800;
+}
+
+.framework-cod ul li {
+  list-style-type: none;
+  line-height: 2;
+}
+
+.cod-skills h4 {
+  font-weight: bolder;
+  font-size: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+.cod-skills h4::before {
+  content: "\25CF";
+  margin-right: 10px;
+  color: #f55800;
+}
+
+.cod-skills ul li {
+  list-style-type: none;
+  line-height: 2;
+}
+
+footer {
+  text-align: center;
+}
+
+.footer-info {
+  padding: 0 20px;
+}
+
+footer form {
+  width: 100%;
+  margin: 0;
+  display: grid;
+  padding-bottom: 5rem;
+  border-bottom: 1px #dfe1e6 solid;
+}
+
+footer form input {
+  width: 100%;
+  height: 35px;
+  margin: 10px auto;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px  #dbd8d7 solid;
+}
+
+footer form input::placeholder {
+  color: #dbd8d7;
+}
+
+footer form textarea {
+  border: none;
+  background-color: #fbf8f7;
+  margin-top: 10px;
+  padding: 20px;
+  font-family: Poppins, sans-serif;
+}
+
+.submit-form {
+  width: 10rem;
+}
+
+.btn-center {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-icon ul li {
+  list-style-type: none;
+}
+
+.footer-icon ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
 }

@@ -1,0 +1,23 @@
+.btn-style {
+  background-color: #ff6b00;
+  color: white;
+  border: none;
+  padding: 15px;
+}
+
+.btn:hover {
+  background-color: #fff5e1;
+  border: 1px #f55800 solid;
+  color: #f55800;
+  cursor: pointer;
+}
+
+.btn:disabled {
+  background-color: #f4f1f0;
+  color: black;
+}
+
+.btn:active {
+  background-color: #e05304;
+  color: white;
+}
