@@ -95,10 +95,15 @@ section h2 {
   display: flex;
 }
 
-.box-bot div {
+.box-bot ul {
+  display: flex;
+}
+
+.box-bot ul li {
   border: 1px black solid;
   padding: 10px;
   margin-right: 10px;
+  list-style-type: none;
 }
 
 section button {
@@ -109,8 +114,11 @@ section button {
 .pupopp {
   background-image: url("./Images/Mask-bg.svg");
   color: white;
-  padding: 30px;
   line-height: 1.7;
+}
+
+.section-art {
+  padding: 0 30px;
 }
 
 .pupopp h2 {
@@ -126,10 +134,17 @@ section button {
   display: flex;
 }
 
-.luang div {
+.luang ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.luang ul li {
   background-color: rgba(255, 255, 255, 0.342);
   padding: 10px;
   margin-right: 10px;
+  list-style-type: none;
 }
 
 .about {
