@@ -78,6 +78,7 @@ section h2 {
 
 .container-block h2 {
   font-size: 35px;
+  margin-top: 8rem;
 }
 
 .container h1 {
@@ -130,7 +131,7 @@ section button {
   margin: 0;
 }
 
-.luang {
+.technologies {
   display: flex;
 }
 
