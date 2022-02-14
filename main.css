@@ -95,15 +95,15 @@ section h2 {
   display: flex;
 }
 
-.box-bot ul {
-  display: flex;
-}
-
 .box-bot ul li {
   border: 1px black solid;
   padding: 10px;
-  margin-right: 10px;
   list-style-type: none;
+  float: right;
+  display: grid;
+  text-align: center;
+  width: 70%;
+  margin: 10px;
 }
 
 section button {
