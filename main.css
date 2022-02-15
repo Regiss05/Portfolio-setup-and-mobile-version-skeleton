@@ -257,10 +257,6 @@ footer {
   padding: 10px;
 }
 
-.footer-info form ul li {
-  list-style-type: none;
-}
-
 footer form {
   width: 100%;
   margin: 0;
@@ -285,7 +281,6 @@ footer form input::placeholder {
 footer form textarea {
   border: none;
   background-color: #fbf8f7;
-  margin-top: 10px;
   padding: 20px;
   font-family: Poppins, sans-serif;
   width: 90%;
