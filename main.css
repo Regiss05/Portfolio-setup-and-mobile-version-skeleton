@@ -259,6 +259,7 @@ footer {
 
 .footer-info ul li {
   list-style-type: none;
+  padding: 0;
 }
 
 footer form {
