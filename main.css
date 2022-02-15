@@ -80,6 +80,10 @@ section h2 {
   font-size: 35px;
 }
 
+.form-multistories {
+  margin-bottom: 5rem;
+}
+
 .container h1 {
   padding-top: 50px;
   border-bottom: 1px black solid;
@@ -87,23 +91,18 @@ section h2 {
   font-family: 'Crete Round', serif;
 }
 
-.container-full {
-  display: grid;
-}
-
-.box-bot {
-  display: flex;
-}
-
 .box-bot ul {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
 }
 
 .box-bot ul li {
   border: 1px black solid;
   padding: 10px;
-  margin-right: 10px;
   list-style-type: none;
+  margin-left: 5px;
 }
 
 section button {
@@ -130,7 +129,7 @@ section button {
   margin: 0;
 }
 
-.luang {
+.technologies {
   display: flex;
 }
 
@@ -138,6 +137,8 @@ section button {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0;
+  padding: 0;
 }
 
 .luang ul li {
@@ -248,10 +249,22 @@ footer {
   padding: 0 20px;
 }
 
+.footer-info h3 {
+  margin: auto 4rem;
+}
+
+.footer-info ul {
+  padding: 10px;
+}
+
+.footer-info ul li {
+  list-style-type: none;
+  padding: 0;
+}
+
 footer form {
   width: 100%;
   margin: 0;
-  display: grid;
   padding-bottom: 5rem;
   border-bottom: 1px #dfe1e6 solid;
 }
@@ -273,9 +286,10 @@ footer form input::placeholder {
 footer form textarea {
   border: none;
   background-color: #fbf8f7;
-  margin-top: 10px;
   padding: 20px;
   font-family: Poppins, sans-serif;
+  width: 90%;
+  margin: 10px 0 20px 0;
 }
 
 .submit-form {
