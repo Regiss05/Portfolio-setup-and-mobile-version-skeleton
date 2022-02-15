@@ -257,6 +257,10 @@ footer {
   padding: 10px;
 }
 
+.footer-info ul li {
+  list-style-type: none;
+}
+
 footer form {
   width: 100%;
   margin: 0;
