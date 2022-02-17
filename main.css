@@ -32,6 +32,8 @@ header {
 }
 
 footer form ul {
+  padding: 0;
+  display: grid;
   display: flex;
 }
 
@@ -39,9 +41,18 @@ footer form ul {
   display: flex;
 }
 
+footer form ul li {
+  width: 100%;
+}
+
 .menu-item ul li {
   list-style-type: none;
   margin-right: 30px;
+}
+
+.menu-item ul li a {
+  color: #fff;
+  text-decoration: none;
 }
 
 .logo-plat ul {
@@ -56,6 +67,8 @@ footer form ul {
 .text-header {
   width: 35rem;
   margin-left: 4rem;
+  display: grid;
+  flex-wrap: wrap;
 }
 
 .header-title {
@@ -67,6 +80,18 @@ footer form ul {
 
 section h2 {
   font-family: 'Crete Round', serif;
+}
+
+.line-rec-work {
+  background-color: black;
+  width: 80%;
+  height: 3px;
+  margin-left: 5rem;
+}
+
+.my-tile {
+  display: flex;
+  align-items: center;
 }
 
 .nav-bar h2 {
@@ -131,21 +156,83 @@ section h2 {
 }
 
 .pupopp {
-  background-image: url("./Images/Mask-bg.svg");
-  color: white;
-  line-height: 1.7;
+  color: #fff;
+  width: 24.5rem;
+  margin: 20px 20px 0 0;
   background-repeat: no-repeat;
   background-size: cover;
+  height: 28rem;
+}
+
+.section-art {
+  line-height: 1.2;
+  padding: 10px 20px;
+}
+
+.section-art h2 {
+  font-size: 30px;
+  padding-top: 14rem;
+}
+
+.section-art p {
+  font-size: 17px;
+  color: rgb(218, 218, 218);
+}
+
+.luang ul li {
+  background-color: rgba(255, 255, 255, 0.342);
+  padding: 10px;
+  margin-right: 10px;
+  list-style-type: none;
+}
+
+.cod-language ul li {
+  list-style-type: none;
+  line-height: 2;
+}
+
+.framework-cod ul li {
+  list-style-type: none;
+  line-height: 2;
+}
+
+.cod-skills ul li {
+  list-style-type: none;
+  line-height: 2;
+}
+
+.sumbt ol li {
+  list-style-type: none;
+}
+
+.pupopp-form1 {
+  background-image: url("./Images/portfolio1.svg");
   width: 23rem;
-  padding: 15px;
-  margin: 10px 10px 0 0;
+}
+
+.pupopp-form2 {
+  background-image: url("./Images/plholder02.svg");
+}
+
+.pupopp-form3 {
+  background-image: url("./Images/plholder03.svg");
+}
+
+.pupopp-form4 {
+  background-image: url("./Images/Placeholder5.svg");
+}
+
+.luang ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
 }
 
 .container-full {
   margin-top: 5rem;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .about {
@@ -210,11 +297,6 @@ section h2 {
   color: #f55800;
 }
 
-.cod-language ul li {
-  list-style-type: none;
-  line-height: 2;
-}
-
 .framework-cod h4 {
   font-weight: bolder;
   font-size: 25px;
@@ -228,11 +310,6 @@ section h2 {
   color: #f55800;
 }
 
-.framework-cod ul li {
-  list-style-type: none;
-  line-height: 2;
-}
-
 .cod-skills h4 {
   font-weight: bolder;
   font-size: 25px;
@@ -244,11 +321,6 @@ section h2 {
   content: "\25CF";
   margin-right: 10px;
   color: #f55800;
-}
-
-.cod-skills ul li {
-  list-style-type: none;
-  line-height: 2;
 }
 
 .language {
@@ -270,36 +342,51 @@ section h2 {
 .footer-info h3 {
   margin: 0;
   padding: 0 3rem;
-  width: 40%;
+  width: 60%;
   font-size: 40px;
   font-weight: bold;
 }
 
 footer form {
-  width: 60%;
-}
-
-.footer-icon ul li {
-  list-style-type: none;
-  margin: 0 10px;
-}
-
-.footer-info form ul li {
-  list-style-type: none;
-  margin: 10px;
-  width: 50%;
-}
-
-footer form input {
-  border-top: none;
-  border-left: none;
-  border-right: none;
-  border-bottom: 1px solid #dbd8d7;
+  width: 100%;
 }
 
 footer form textarea {
   border: none;
   background-color: #fbf8f7;
+  width: 94%;
+}
+
+.sumbt ol li textarea {
+  padding: 20px;
+}
+
+.sumbt ol li textarea::placeholder {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.footer-icon ul li {
+  list-style-type: none;
+}
+
+.footer-info form ul li {
+  list-style-type: none;
+  margin: 10px;
+  width: 100%;
+  border-bottom: 1px solid #dbdbd7;
+  padding-bottom: 15px;
+}
+
+footer form input {
+  border: none;
+}
+
+footer form input::placeholder {
+  font-size: 15px;
+}
+
+.section-art .luang ul li {
+  font-size: 10px;
 }
 
 .footer-icon {
@@ -313,210 +400,276 @@ footer form textarea {
   padding: 0;
 }
 
+@media (max-width: 1180px) {
+  .pupopp {
+    width: auto;
+    margin: 0 0 20px 0;
+    padding: 0;
+  }
+
+  header {
+    background-size: 30%;
+  }
+
+  body {
+    font-size: 16px;
+  }
+
+  .footer-info h3 {
+    font-size: 24px;
+    color: #172b4d;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .box-bot ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .pupopp-form1 {
+    width: 100%;
+    height: 30vh;
+    margin-bottom: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
 @media (max-width: 820px) {
   header {
     background-image: url("./Images/illustration-header-mobile.svg");
-    background-repeat: no-repeat;
-    background-size: 125px;
+    background-size: 12rem;
     background-position: right bottom;
   }
 
-  .nav-bar {
-    align-items: center;
+  .menu-item {
+    display: none;
+  }
+
+  .menu-btn {
+    display: block;
   }
 
   .header-title {
     padding: 8rem 25px;
     line-height: 1.2;
+    display: grid;
   }
 
-  .header-title h1 {
-    font-size: 50px;
-    margin: 0;
-    padding: 0;
+  .text-header {
+    display: flex;
   }
 
-  .header-title h3 {
+  .text-header h3 {
     color: #fff5e1;
+    padding: 0;
+    margin-top: 30px;
+    font-size: 24px;
   }
 
   .logo-plat {
-    margin-top: 30px;
+    order: 1;
+    margin-left: 4rem;
   }
 
   .logo-plat ul {
     display: flex;
-    padding: 0;
   }
 
-  .container section img {
-    width: 100%;
-    margin-top: 50px;
-  }
-
-  .logo-plat ul li img {
+  .logo-plat ul li {
     margin-right: 20px;
-    width: 18px;
   }
 
-  .container-block {
-    padding: 20px;
-  }
-
-  .container-block h2 {
-    font-size: 35px;
-  }
-
-  .form-multistories {
-    margin-bottom: 5rem;
-  }
-
-  .box-bot ul {
-    justify-content: center;
-    align-items: center;
-  }
-
-  .container h1 {
-    padding-top: 50px;
-    border-bottom: 1px black solid;
-    padding-bottom: 50px;
-    font-family: 'Crete Round', serif;
-  }
-
-  section button {
-    margin: 10px auto;
-    font-weight: bold;
-  }
-
-  .section-art {
-    padding: 0 30px;
-  }
-
-  .pupopp h2 {
-    font-family: 'Crete Round', serif;
-  }
-
-  .technologies {
-    display: flex;
-  }
-
-  .luang ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  .header-title h1 {
+    font-size: 65px;
     margin: 0;
     padding: 0;
   }
 
-  .luang ul li {
-    background-color: rgba(255, 255, 255, 0.342);
-    padding: 10px;
-    margin-right: 10px;
-    list-style-type: none;
+  .container-block {
+    padding: 12rem 3rem 3rem 3rem;
   }
 
-  .about h3 {
-    font-size: 30px;
-    color: #f55800;
+  .line-rec-work {
+    width: 90%;
+    margin-top: 40px;
+    justify-content: center;
   }
 
-  .about p {
-    color: rgb(173, 173, 173);
+  .my-tile {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form-multistories {
+    display: grid;
+  }
+
+  .form-multistories img {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .img-text {
+    padding: 2rem 0 0 0;
+  }
+
+  .box-bot {
+    margin-top: 3rem;
+  }
+
+  .container-full {
+    margin-top: 3rem;
+    padding: 0;
+  }
+
+  .language {
+    display: grid;
+  }
+
+  .footer-info {
+    display: grid;
   }
 
   .about-text {
     background-image: url("./Images/aboutbg.svg");
-    background-repeat: no-repeat;
-    background-size: 110px;
-    background-position: right 19rem;
-    padding: 5rem 20px;
-  }
-
-  .about-section {
-    padding-bottom: 5rem;
-    border-bottom: 1px white solid;
+    background-size: 12rem;
+    background-size: 20rem;
+    background-position: right bottom;
   }
 
   .about-section h3 {
-    font-family: 'Crete Round', serif;
-  }
-
-  .language {
-    display: block;
-    padding-bottom: 5rem;
-    text-align: center;
-  }
-
-  footer {
-    text-align: center;
-  }
-
-  .footer-info {
-    padding: 0 20px;
+    font-size: 35px;
   }
 
   .footer-info h3 {
-    margin: auto 4rem;
-  }
-
-  .footer-info ul {
-    padding: 10px;
-  }
-
-  .footer-info ul li {
-    list-style-type: none;
+    width: 100%;
     padding: 0;
+    margin: 0;
   }
 
-  footer form {
+  .footer-info form {
     width: 100%;
     margin: 0;
-    padding-bottom: 5rem;
-    border-bottom: 1px #dfe1e6 solid;
-  }
-
-  footer form input {
-    width: 100%;
-    height: 35px;
-    margin: 10px auto;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    border-bottom: 1px  #dbd8d7 solid;
-  }
-
-  footer form input::placeholder {
-    color: #dbd8d7;
-  }
-
-  footer form textarea {
-    border: none;
-    background-color: #fbf8f7;
-    padding: 20px;
-    font-family: Poppins, sans-serif;
-    width: 90%;
-    margin: 10px 0 20px 0;
-  }
-
-  .submit-form {
-    width: 10rem;
-  }
-
-  .btn-center {
-    margin-top: 25px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .footer-icon ul li {
-    list-style-type: none;
-  }
-
-  .footer-icon ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     padding: 0;
+  }
+
+  form ol {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media (max-width: 650px) {
+  .text-header {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .about-text {
+    padding: 9rem 30px;
+    background-size: 8rem;
+  }
+
+  .about-section {
+    width: 100%;
+    margin: 0;
+  }
+
+  .about-section p {
+    font-size: 10px;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .footer-info h3 {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 300px) {
+  .header-title h1 {
+    font-size: 29px;
+  }
+
+  .text-header h3 {
+    font-size: 10px;
+  }
+
+  .header-title {
+    padding: 2rem 15px;
+  }
+
+  .text-header p {
+    color: #bfbfbf;
+    line-height: 1.2;
+    font-size: 8px;
+  }
+
+  .logo-plat {
+    margin-left: 0;
+  }
+
+  .logo-plat ul li img {
+    width: 10px;
+  }
+
+  header {
+    background-size: 10rem;
+  }
+
+  .container-block {
+    padding: 20px 10px;
+  }
+
+  .container-block h2 {
+    font-size: 19px;
+  }
+
+  .line-rec-work {
+    padding: 1rem 5rem;
+  }
+
+  .img-text p {
+    font-size: 10px;
+  }
+
+  .box-bot ul li {
+    padding: 2px;
+  }
+
+  .btn-style {
+    padding: 6px;
+    font-size: 11px;
+  }
+
+  .section-art p {
+    font-size: 10px;
+  }
+
+  .pupopp {
+    height: 20rem;
+  }
+
+  .section-art h2 {
+    font-size: 16px;
+    padding-top: 8rem;
+  }
+
+  .about-text {
+    padding: 1rem 20px;
+    background-size: 5rem;
+  }
+
+  .language {
+    padding: 1rem 0;
+  }
+
+  .footer-form {
+    padding: 4px;
   }
 }
