@@ -17,6 +17,7 @@
   border: 1px #f55800 solid;
   color: #f55800;
   cursor: pointer;
+  transition: 0.5s ease;
 }
 
 .btn:disabled {
@@ -31,4 +32,41 @@
 
 .btn-style-btn {
   width: 100vh;
+}
+
+.form-multistories img:hover {
+  transform: rotate(360deg);
+  transition: 1s ease-in;
+}
+
+.luang ul li:hover {
+  margin-right: 79px;
+}
+
+.about-section h3:hover {
+  transform: translate(100px);
+}
+
+.header-title h1:hover {
+  transform: translate(100px);
+}
+
+.text-header h3:hover {
+  transform: translate(100px);
+}
+
+.text-header p:hover {
+  transform: translate(100px);
+}
+
+.about-section p:hover {
+  transform: translate(100px);
+}
+
+.logo-plat ul li:hover {
+  margin-bottom: 46px;
+}
+
+.footer-icon ul li:hover {
+  margin: 0 20px;
 }
