@@ -496,7 +496,7 @@ footer form input::placeholder {
   }
 
   .footer-form {
-    padding: 10rem;
+    padding: 2rem;
   }
 }
 
@@ -568,6 +568,10 @@ footer form input::placeholder {
 
   .container-full h2 {
     padding-top: 14.6rem;
+  }
+
+  .footer-form {
+    padding: 10rem;
   }
 
   .container-full div:nth-child(3) h2 {
