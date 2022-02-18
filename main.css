@@ -436,7 +436,7 @@ footer form input::placeholder {
   bottom: 45px;
 }
 
-@media (min-width: 820px) and (max-width: 1180px) {
+@media (min-width: 992px) and (max-width: 1100px) {
   header {
     background-size: 30%;
   }
@@ -498,7 +498,7 @@ footer form input::placeholder {
   }
 }
 
-@media (max-width: 650px) and (max-width: 820px) {
+@media (max-width: 650px) and (max-width: 992px) {
   header {
     background-image: url("./Images/illustration-header-mobile.svg");
     background-size: 12rem;
