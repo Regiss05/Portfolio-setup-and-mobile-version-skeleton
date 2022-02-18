@@ -27,6 +27,30 @@ header {
   display: block;
 }
 
+.box {
+  animation: animName 2s linear infinite;
+  width: 30px;
+  height: 30px;
+  background: #ff6b00;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+.logoname {
+  display: flex;
+  align-items: center;
+}
+
+@keyframes animName {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 .nav-bar {
   background-color: #3c3a39;
   display: flex;
