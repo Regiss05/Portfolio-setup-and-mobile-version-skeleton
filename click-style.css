@@ -5,6 +5,13 @@
   padding: 15px;
 }
 
+.btn-style1 {
+  background-color: #f55800;
+  color: white;
+  border: none;
+  padding: 15px;
+}
+
 .btn:hover {
   background-color: #fff5e1;
   border: 1px #f55800 solid;
@@ -20,4 +27,8 @@
 .btn:active {
   background-color: #e05304;
   color: white;
+}
+
+.btn-style-btn {
+  width: 100vh;
 }
