@@ -19,6 +19,14 @@ header {
   background-position: right;
 }
 
+.small-screen {
+  display: none;
+}
+
+.larg-screen {
+  display: block;
+}
+
 .nav-bar {
   background-color: #3c3a39;
   display: flex;
@@ -84,7 +92,7 @@ section h2 {
 
 .line-rec-work {
   background-color: black;
-  width: 80%;
+  width: 60%;
   height: 3px;
   margin-left: 5rem;
 }
@@ -147,21 +155,38 @@ section h2 {
   border: 1px black solid;
   padding: 10px;
   list-style-type: none;
-  margin-left: 5px;
+  margin-right: 29px;
+  font-size: 22px;
 }
 
 .container-poppup button {
-  width: 98%;
+  width: 100%;
   margin: 0;
+}
+
+.padd-change {
+  padding-top: 30rem;
 }
 
 .pupopp {
   color: #fff;
   width: 24.5rem;
-  margin: 20px 20px 0 0;
+  margin: 20px 20px 40px 0;
   background-repeat: no-repeat;
   background-size: cover;
   height: 28rem;
+}
+
+.container-full div:nth-child(3) h2 {
+  padding-top: 15.5rem;
+}
+
+.container-full div:nth-child(6) h2 {
+  padding-top: 15.5rem;
+}
+
+.second-padd {
+  padding-top: 20px;
 }
 
 .section-art {
@@ -169,14 +194,17 @@ section h2 {
   padding: 10px 20px;
 }
 
-.section-art h2 {
-  font-size: 30px;
-  padding-top: 14rem;
+.section-padding {
+  padding-top: 45px;
 }
 
 .section-art p {
   font-size: 17px;
   color: rgb(218, 218, 218);
+}
+
+.lg-screen .section-art {
+  opacity: 0;
 }
 
 .luang ul li {
@@ -207,7 +235,6 @@ section h2 {
 
 .pupopp-form1 {
   background-image: url("./Images/portfolio1.svg");
-  width: 23rem;
 }
 
 .pupopp-form2 {
@@ -354,11 +381,12 @@ footer form {
 footer form textarea {
   border: none;
   background-color: #fbf8f7;
-  width: 94%;
+  width: 100%;
+  height: 10rem;
 }
 
-.sumbt ol li textarea {
-  padding: 20px;
+ol {
+  padding: 10px;
 }
 
 .sumbt ol li textarea::placeholder {
@@ -400,13 +428,12 @@ footer form input::placeholder {
   padding: 0;
 }
 
-@media (max-width: 1180px) {
-  .pupopp {
-    width: auto;
-    margin: 0 0 20px 0;
-    padding: 0;
-  }
+.btn-pos {
+  position: relative;
+  bottom: 45px;
+}
 
+@media (max-width: 1180px) {
   header {
     background-size: 30%;
   }
@@ -425,16 +452,14 @@ footer form input::placeholder {
   .box-bot ul {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
   }
 
-  .pupopp-form1 {
-    width: 100%;
-    height: 30vh;
-    margin-bottom: 20px;
-    background-repeat: no-repeat;
-    background-size: cover;
+  .box-bot ul li {
+    margin-right: 7px;
+  }
+
+  .section-art h2 {
+    padding-top: 12rem;
   }
 }
 
@@ -443,6 +468,43 @@ footer form input::placeholder {
     background-image: url("./Images/illustration-header-mobile.svg");
     background-size: 12rem;
     background-position: right bottom;
+  }
+
+  .larg-screen {
+    display: none;
+  }
+
+  .section-art h2 {
+    font-size: 30px;
+    padding-top: 13.3rem;
+  }
+
+  .container-full div:nth-child(3) h2 {
+    padding-top: 12rem;
+  }
+
+  .container-full div:nth-child(6) h2 {
+    padding-top: 12rem;
+  }
+
+  .small-screen {
+    display: block;
+  }
+
+  .lg-screen .section-art {
+    opacity: 1;
+  }
+
+  .pupopp-form1 {
+    background-image: url("./Images/Placeholder5.svg");
+  }
+
+  .pupopp-form2 {
+    background-image: url("./Images/Placeholder5.svg");
+  }
+
+  .pupopp-form3 {
+    background-image: url("./Images/Placeholder5.svg");
   }
 
   .menu-item {
@@ -536,8 +598,7 @@ footer form input::placeholder {
 
   .about-text {
     background-image: url("./Images/aboutbg.svg");
-    background-size: 12rem;
-    background-size: 20rem;
+    background-size: 10rem;
     background-position: right bottom;
   }
 
@@ -588,6 +649,21 @@ footer form input::placeholder {
 
   .footer-info h3 {
     font-size: 17px;
+  }
+
+  .box-bot ul li {
+    margin-left: 8px;
+    padding: 11px;
+    font-size: 13px;
+  }
+
+  .section-art h2 {
+    font-size: 30px;
+    padding-top: 13.9rem;
+  }
+
+  .container-block h2 {
+    font-size: 28px;
   }
 }
 
@@ -653,6 +729,7 @@ footer form input::placeholder {
 
   .pupopp {
     height: 20rem;
+    margin: 4rem 0;
   }
 
   .section-art h2 {
