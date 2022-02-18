@@ -126,7 +126,7 @@ section h2 {
 }
 
 .container-block {
-  padding: 6rem;
+  padding: 6rem 3rem;
 }
 
 .container-block h2 {
@@ -137,7 +137,6 @@ section h2 {
 
 .form-multistories {
   display: flex;
-  flex-wrap: wrap;
   margin-top: 4rem;
 }
 
@@ -146,7 +145,7 @@ section h2 {
 }
 
 .img-text {
-  padding-left: 5rem;
+  padding-left: 2rem;
 }
 
 .box-bot ul {
@@ -259,11 +258,12 @@ section h2 {
   padding: 0;
 }
 
+.container-form {
+  padding-top: 6rem;
+}
+
 .container-full {
-  margin-top: 5rem;
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
 }
 
 .about {
@@ -438,6 +438,10 @@ footer form input::placeholder {
   bottom: 45px;
 }
 
+.footer-form {
+  padding: 4rem;
+}
+
 @media (min-width: 992px) and (max-width: 1100px) {
   header {
     background-size: 30%;
@@ -447,32 +451,52 @@ footer form input::placeholder {
     font-size: 16px;
   }
 
-  .footer-info h3 {
-    color: #172b4d;
-    font-weight: bold;
-    text-align: center;
-    font-size: 22px;
-  }
-
-  .box-bot ul {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .box-bot ul li {
-    margin-right: 7px;
-  }
-
-  .section-art h2 {
-    padding-top: 1.3rem;
+  .container-block {
+    padding: 6rem;
   }
 
   .pupopp {
-    width: auto;
-    margin: 10px 10px 20px 0;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 28rem;
+    width: 15.5rem;
+    height: 21rem;
+  }
+
+  .container-block h2 {
+    font-size: 27px;
+  }
+
+  .section-art h2{
+    padding-top: 0;
+    font-size: 20px;
+  }
+
+  .section-art p {
+    font-size: 12px;
+  }
+
+  .container-full div:nth-child(3) h2 {
+    padding-top: 1.5rem;
+  }
+
+  .form-multistories img {
+    width: 100vh;
+    height: 38vh;
+  }
+
+  .container-full div:nth-child(6) h2 {
+    padding-top: 1.5rem;
+  }
+
+  .footer-info h3 {
+    font-size: 27px;
+  }
+
+  .about-text {
+    background-size: 22rem;
+    background-position: right 15rem;
+  }
+
+  .footer-form {
+    padding: 10rem;
   }
 }
 
@@ -483,8 +507,18 @@ footer form input::placeholder {
     background-position: right bottom;
   }
 
+  .container-block {
+    padding: 3rem;
+  }
+
+  .container-full {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
   .text-header {
-    width: 20rem;
+    width: 27rem;
     margin-left: 4rem;
     display: grid;
     flex-wrap: wrap;
@@ -513,26 +547,35 @@ footer form input::placeholder {
     display: block;
   }
 
+  .form-multistories {
+    flex-wrap: wrap;
+  }
+
   .lg-screen .section-art {
     opacity: 1;
   }
 
+  .form-multistories img {
+    width: 100vh;
+    height: 44vh;
+  }
+
   .pupopp {
-    width: 38rem;
+    width: 100%;
     height: 40rem;
-    margin: auto;
+    margin: 22px;
   }
 
   .container-full h2 {
-    padding-top: 13.6rem;
+    padding-top: 14.6rem;
   }
 
   .container-full div:nth-child(3) h2 {
-    padding-top: 13.6rem;
+    padding-top: 14.6rem;
   }
 
   .container-full div:nth-child(6) h2 {
-    padding-top: 13.6rem;
+    padding-top: 14.6rem;
   }
 
   .pupopp-form1 {
@@ -592,7 +635,7 @@ footer form input::placeholder {
   }
 
   .header-title h1 {
-    font-size: 47px;
+    font-size: 64px;
     margin: 0;
     padding: 0;
   }
@@ -602,7 +645,11 @@ footer form input::placeholder {
   }
 
   .container-block {
-    padding: 3rem 10rem;
+    padding: 3rem 13rem;
+  }
+
+  .img-text {
+    width: 74%;
   }
 
   .line-rec-work {
@@ -614,6 +661,7 @@ footer form input::placeholder {
   .my-tile {
     display: flex;
     flex-direction: column;
+    width: 74%;
   }
 
   .form-multistories img {
@@ -657,7 +705,7 @@ footer form input::placeholder {
     padding: 0;
     margin: 0 0 70px 0;
     text-align: center;
-    font-size: 19px;
+    font-size: 30px;
   }
 
   .footer-info form {
@@ -677,14 +725,20 @@ footer form input::placeholder {
 
   .about-section p {
     font-size: 13px;
+    width: 30rem;
   }
+  
 }
 
-@media (min-width: 300px) and (max-width: 620px) {
+@media (min-width: 300px) and (max-width: 700px) {
   .text-header {
     width: 100%;
     padding: 0;
     margin: 0;
+  }
+
+  .container-full h2 {
+    padding-top: 2.6rem;
   }
 
   .container-block {
@@ -715,7 +769,7 @@ footer form input::placeholder {
     margin-left: 8px;
     padding: 11px;
     font-size: 13px;
-  }
+  }s
 
   .section-art h2 {
     font-size: 30px;
