@@ -467,26 +467,6 @@ footer form input::placeholder {
     padding-top: 1.3rem;
   }
 
-  .container-full div:nth-child(2) h2 {
-    padding-top: 4.5rem;
-  }
-
-  .container-full div:nth-child(3) h2 {
-    padding-top: 4.5rem;
-  }
-
-  .container-full div:nth-child(4) h2 {
-    padding-top: 4.5rem;
-  }
-
-  .container-full div:nth-child(5) h2 {
-    padding-top: 4.5rem;
-  }
-
-  .container-full div:nth-child(6) h2 {
-    padding-top: 4.5rem;
-  }
-
   .pupopp {
     width: auto;
     margin: 10px 10px 20px 0;
@@ -501,6 +481,13 @@ footer form input::placeholder {
     background-image: url("./Images/illustration-header-mobile.svg");
     background-size: 12rem;
     background-position: right bottom;
+  }
+
+  .text-header {
+    width: 20rem;
+    margin-left: 4rem;
+    display: grid;
+    flex-wrap: wrap;
   }
 
   footer form ul {
@@ -518,15 +505,7 @@ footer form input::placeholder {
   }
 
   .section-art h2 {
-    font-size: 30px;
-    padding-top: 2rem;
-  }
-
-  .container-full div:nth-child(3) h2 {
-    padding-top: 2rem;
-  }
-
-  .container-full div:nth-child(6) h2 {
+    font-size: 38px;
     padding-top: 2rem;
   }
 
@@ -539,9 +518,21 @@ footer form input::placeholder {
   }
 
   .pupopp {
-    width: auto;
-    height: auto;
+    width: 38rem;
+    height: 40rem;
     margin: auto;
+  }
+
+  .container-full h2 {
+    padding-top: 13.6rem;
+  }
+
+  .container-full div:nth-child(3) h2 {
+    padding-top: 13.6rem;
+  }
+
+  .container-full div:nth-child(6) h2 {
+    padding-top: 13.6rem;
   }
 
   .pupopp-form1 {
@@ -569,10 +560,7 @@ footer form input::placeholder {
     line-height: 1.2;
     display: flex;
     flex-wrap: wrap;
-  }
-
-  .text-header {
-    display: flex;
+    width: 35rem;
   }
 
   .text-header h3 {
@@ -604,7 +592,7 @@ footer form input::placeholder {
   }
 
   .header-title h1 {
-    font-size: 36px;
+    font-size: 47px;
     margin: 0;
     padding: 0;
   }
@@ -614,7 +602,7 @@ footer form input::placeholder {
   }
 
   .container-block {
-    padding: 0 1rem 1rem 1rem;
+    padding: 3rem 10rem;
   }
 
   .line-rec-work {
@@ -692,11 +680,15 @@ footer form input::placeholder {
   }
 }
 
-@media (min-width: 300px) and (max-width: 650px) {
+@media (min-width: 300px) and (max-width: 620px) {
   .text-header {
     width: 100%;
     padding: 0;
     margin: 0;
+  }
+
+  .container-block {
+    padding: 3rem;
   }
 
   .about-text {
@@ -727,10 +719,36 @@ footer form input::placeholder {
 
   .section-art h2 {
     font-size: 30px;
-    padding-top: 13.9rem;
+    padding-top: 2.4rem;
   }
 
   .container-block h2 {
     font-size: 28px;
+  }
+
+  .text-header p {
+    width: 22rem;
+  }
+
+  .logo-plat {
+    margin-left: 0;
+  }
+
+  .header-title {
+    width: 19rem;
+  }
+
+  .pupopp {
+    width: 27rem;
+    height: 28rem;
+    margin: auto;
+  }
+
+  .container-full div:nth-child(3) h2 {
+    padding-top: 2.4rem;
+  }
+
+  .container-full div:nth-child(6) h2 {
+    padding-top: 2.4rem;
   }
 }
