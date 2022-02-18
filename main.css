@@ -70,6 +70,7 @@ footer form ul li {
 .logo-plat ul li {
   list-style-type: none;
   margin-bottom: 20px;
+  margin-right: 20px;
 }
 
 .text-header {
@@ -155,10 +156,10 @@ section h2 {
 
 .box-bot ul li {
   border: 1px black solid;
-  padding: 10px;
   list-style-type: none;
-  margin-right: 29px;
-  font-size: 22px;
+  padding: 3px;
+  margin-right: 10px;
+  font-size: 17px;
 }
 
 .container-poppup button {
@@ -446,10 +447,10 @@ footer form input::placeholder {
   }
 
   .footer-info h3 {
-    font-size: 24px;
     color: #172b4d;
     font-weight: bold;
     text-align: center;
+    font-size: 22px;
   }
 
   .box-bot ul {
@@ -485,10 +486,6 @@ footer form input::placeholder {
     padding-top: 4.5rem;
   }
 
-  .footer-info h3 {
-    font-size: 22px;
-  }
-
   .pupopp {
     width: auto;
     margin: 10px 10px 20px 0;
@@ -498,7 +495,7 @@ footer form input::placeholder {
   }
 }
 
-@media (max-width: 650px) and (max-width: 992px) {
+@media (max-width: 992px) {
   header {
     background-image: url("./Images/illustration-header-mobile.svg");
     background-size: 12rem;
@@ -605,10 +602,6 @@ footer form input::placeholder {
     display: flex;
   }
 
-  .logo-plat ul li {
-    margin-right: 20px;
-  }
-
   .header-title h1 {
     font-size: 36px;
     margin: 0;
@@ -619,14 +612,8 @@ footer form input::placeholder {
     font-size: 10px;
   }
 
-  .box-bot ul li {
-    padding: 3px;
-    margin-right: 10px;
-    font-size: 17px;
-  }
-
   .container-block {
-    padding: 0rem 1rem 1rem 1rem;
+    padding: 0 1rem 1rem 1rem;
   }
 
   .line-rec-work {
@@ -668,8 +655,8 @@ footer form input::placeholder {
 
   .about-text {
     background-image: url("./Images/aboutbg.svg");
-    background-size: 10rem;
     background-position: right bottom;
+    background-size: 7rem;
   }
 
   .about-section h3 {
@@ -681,6 +668,7 @@ footer form input::placeholder {
     padding: 0;
     margin: 0 0 70px 0;
     text-align: center;
+    font-size: 19px;
   }
 
   .footer-info form {
@@ -695,23 +683,15 @@ footer form input::placeholder {
   }
 
   .about-section {
-    width: auto;   
-  }
-
-  .footer-info h3 {
-    font-size: 19px;
+    width: auto;
   }
 
   .about-section p {
     font-size: 13px;
   }
-
-  .about-text {
-    background-size: 7rem;
-  }
 }
 
-@media (max-width: 300px) and (max-width: 650px) {
+@media (min-width: 300px) and (max-width: 650px) {
   .text-header {
     width: 100%;
     padding: 0;
@@ -752,6 +732,4 @@ footer form input::placeholder {
   .container-block h2 {
     font-size: 28px;
   }
-
-
 }
