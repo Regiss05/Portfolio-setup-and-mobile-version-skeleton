@@ -438,10 +438,6 @@ footer form input::placeholder {
   bottom: 45px;
 }
 
-.footer-form {
-  padding: 4rem;
-}
-
 @media (min-width: 992px) and (max-width: 1100px) {
   header {
     background-size: 30%;
@@ -464,7 +460,7 @@ footer form input::placeholder {
     font-size: 27px;
   }
 
-  .section-art h2{
+  .section-art h2 {
     padding-top: 0;
     font-size: 20px;
   }
@@ -508,13 +504,15 @@ footer form input::placeholder {
   }
 
   .container-block {
-    padding: 3rem;
+    padding: 3rem 13rem;
   }
 
   .container-full {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-top: 3rem;
+    padding: 0;
   }
 
   .text-header {
@@ -556,8 +554,8 @@ footer form input::placeholder {
   }
 
   .form-multistories img {
-    width: 100vh;
-    height: 44vh;
+    width: 100%;
+    margin-bottom: 20px;
   }
 
   .pupopp {
@@ -648,12 +646,9 @@ footer form input::placeholder {
     font-size: 10px;
   }
 
-  .container-block {
-    padding: 3rem 13rem;
-  }
-
   .img-text {
     width: 74%;
+    padding: 2rem 0 0 0;
   }
 
   .line-rec-work {
@@ -668,22 +663,8 @@ footer form input::placeholder {
     width: 74%;
   }
 
-  .form-multistories img {
-    width: 100%;
-    margin-bottom: 20px;
-  }
-
-  .img-text {
-    padding: 2rem 0 0 0;
-  }
-
   .box-bot {
     margin-top: 3rem;
-  }
-
-  .container-full {
-    margin-top: 3rem;
-    padding: 0;
   }
 
   .language {
@@ -731,7 +712,6 @@ footer form input::placeholder {
     font-size: 13px;
     width: 30rem;
   }
-  
 }
 
 @media (min-width: 300px) and (max-width: 700px) {
@@ -773,7 +753,7 @@ footer form input::placeholder {
     margin-left: 8px;
     padding: 11px;
     font-size: 13px;
-  }s
+  }
 
   .section-art h2 {
     font-size: 30px;
