@@ -1,8 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
-Portfolio-setup-and-mobile-version-skeleton
-
+# Portfolio-setup-and-mobile-version-skeleton
 
 ![Portfolio](https://user-images.githubusercontent.com/38294716/154955357-0ee29e2a-7683-4ccd-b5f9-29c868f4dee2.png)
 
@@ -38,10 +36,10 @@ npx stylelint "**/*.{css,scss}"
 npx hint ./index.html 
 
 ### Deployment
-
-
+GH-Pages
 
 ## Authors
+Regiss Mukubixs
 
 👤 **Author1**
 
