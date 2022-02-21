@@ -33,7 +33,6 @@ header {
   height: 30px;
   background: #ff6b00;
   margin: 20px;
-  border-radius: 10px;
 }
 
 .logoname {
@@ -56,7 +55,9 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 25px;
+  padding: 0 25px;
+  position: fixed;
+  width: 100%;
 }
 
 .menu-btn {
@@ -71,6 +72,7 @@ footer form ul {
 
 .menu-item ul {
   display: flex;
+  margin-right: 3rem;
 }
 
 footer form ul li {
@@ -107,7 +109,7 @@ footer form ul li {
 
 .header-title {
   display: flex;
-  padding: 10rem 25px;
+  padding: 21rem 25px 7rem 25px;
   line-height: 1.2;
   align-items: center;
 }
@@ -129,22 +131,6 @@ section h2 {
   align-items: center;
 }
 
-.nav-bar h2 {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  -webkit-animation-name: cycle;
-  -webkit-animation-duration: 2s;
-  -webkit-animation-iteration-count: 1;
-  -webkit-animation-fill-mode: forwards;
-  animation-name: cycle;
-  animation-duration: 2s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
-  -moz-animation-name: cycle;
-  -moz-animation-duration: 2s;
-  -moz-animation-iteration-count: 1;
-  -moz-animation-fill-mode: forwards;
-}
-
 .header-title h1 {
   color: #ff6b00;
   font-family: 'Crete Round', serif;
@@ -152,17 +138,20 @@ section h2 {
   margin: 0;
   font-weight: normal;
   transition: 1s;
+  line-height: 1;
 }
 
 .text-header h3 {
-  font-size: 40px;
+  font-size: 31px;
   transition: 1s;
+  margin: 10px 0;
 }
 
 .text-header p {
   color: #bfbfbf;
   line-height: 1.5;
   transition: 1s;
+  margin: 0;
 }
 
 .about-section p {
@@ -644,12 +633,22 @@ footer form input::placeholder {
     display: none;
   }
 
+  .box {
+    width: 20px;
+    height: 20px;
+  }
+
+  h2.reganin {
+    font-size: 22px;
+  }
+
   .menu-btn {
     display: block;
+    margin-right: 3rem;
   }
 
   .header-title {
-    padding: 8rem 25px;
+    padding: 17rem 25px 3rem 25px;
     line-height: 1.2;
     display: flex;
     flex-wrap: wrap;
