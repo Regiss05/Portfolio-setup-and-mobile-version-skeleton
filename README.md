@@ -7,14 +7,13 @@
 
 > This website is a Portfolio developped for desktop and mobile version.
 
-
 ## Built With
 
 - Major languages: HTML, CSS
 - Frameworks
 - Technologies used: LINT, HINT, LINTHOUSE
 
-## 👉🏼Live Demo](https://regiss05.github.io/Portfolio-setup-and-mobile-version-skeleton/)
+## [Live Demo](https://regiss05.github.io/Portfolio-setup-and-mobile-version-skeleton/)
 
 ## Getting Started
 
