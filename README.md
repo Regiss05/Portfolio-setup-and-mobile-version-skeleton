@@ -1,5 +1,9 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
+
+![Portfolio](https://user-images.githubusercontent.com/38294716/154955357-0ee29e2a-7683-4ccd-b5f9-29c868f4dee2.png)
+
+
 # Project Name
 
 > Description the project.
@@ -18,20 +22,18 @@
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
 ### Setup
-npm install
+Nothing
 
 ### Install
+Nothing
 
 ### Usage
+Nothing
 
 ### Run tests
 npx stylelint "**/*.{css,scss}"
