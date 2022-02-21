@@ -1,19 +1,17 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Portfolio-setup-and-mobile-version-skeleton
 
-> Description the project.
+> This website is a Portfolio developped for desktop and mobile version.
 
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- Major language: HTML, CSS
+- Frameworks: 
+- Technologies used: LINT, HINT, LINTHOUSE
 
-## Live Demo (if available)
-
-[Live Demo Link](https://regiss05.github.io/Portfolio-setup-and-mobile-version-skeleton/)
+## [Live Demo Link](https://regiss05.github.io/Portfolio-setup-and-mobile-version-skeleton/)
 
 
 ## Getting Started
@@ -33,30 +31,25 @@ To get a local copy up and running follow these simple example steps.
 ### Usage
 
 ### Run tests
+npx stylelint "**/*.{css,scss}" 
+npx hint ./index.html
 
 ### Deployment
-
+GH-Pages
 
 
 ## Authors
+Regiss
 
 👤 **Author1**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@regiss05](https://github.com/Regiss05)
+- Twitter: [@regiss05](https://twitter.com/regissmukubiza)
+- LinkedIn: [regiss05](https://www.linkedin.com/in/regiss-mukubiza-1bab841b3/)
 
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
 
 ## 🤝 Contributing
-
-Contributions, issues, and feature requests are welcome!
-
-Feel free to check the [issues page](../../issues/).
+Regiss Mukubiza
 
 ## Show your support
 
