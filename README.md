@@ -9,8 +9,6 @@ Portfolio-setup-and-mobile-version-skeleton
 
 > This website is a Portfolio developped for desktop and mobile version.
 
-[Preview your demo](https://regiss05.github.io/Portfolio-setup-and-mobile-version-skeleton/)
-
 
 ## Built With
 
@@ -18,10 +16,7 @@ Portfolio-setup-and-mobile-version-skeleton
 - Frameworks
 - Technologies used: LINT, HINT, LINTHOUSE
 
-## Live Demo (if available)
-
-
-
+## Live Demo (https://regiss05.github.io/Portfolio-setup-and-mobile-version-skeleton/)
 
 ## Getting Started
 
@@ -56,7 +51,7 @@ npx hint ./index.html
 
 ## 🤝 Contributing
 
-Contributions, issues, and feature requests are welcome!
+Regiss Mukubiza
 
 ## Show your support
 
