@@ -29,8 +29,8 @@ To get a local copy up and running follow these simple example steps.
 ### Usage
 
 ### Run tests
-npx stylelint "**/*.{css,scss}" 
-npx hint ./index.html
+- npx stylelint "**/*.{css,scss}" 
+- npx hint ./index.html
 
 ### Deployment
 GH-Pages
