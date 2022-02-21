@@ -14,7 +14,7 @@
 - Frameworks
 - Technologies used: LINT, HINT, LINTHOUSE
 
-## [Live Demo](https://regiss05.github.io/Portfolio-setup-and-mobile-version-skeleton/)
+## 👉🏼Live Demo](https://regiss05.github.io/Portfolio-setup-and-mobile-version-skeleton/)
 
 ## Getting Started
 
