@@ -1,17 +1,19 @@
 .btn-style {
   background-color: #ff6b00;
-  color: white;
+  color: black;
   border: none;
   padding: 15px;
   transition: 0.5s ease;
+  font-weight: bold;
 }
 
 .btn-style1 {
   background-color: #f55800;
-  color: white;
+  color: black;
   border: none;
   padding: 15px;
   transition: 0.5s ease;
+  font-weight: bold;
 }
 
 .btn {
@@ -74,4 +76,8 @@
 
 .footer-icon ul li:hover {
   margin: 0 20px;
+}
+
+.menu-item ul li a:hover {
+  border-bottom: 3px white solid;
 }
