@@ -31,9 +31,9 @@ Nothing
 Nothing
 
 ### Run tests
-- npx stylelint "**/*.{css,scss}"
-- npx hint .
-- npx eslint .
+- STYLES: npx stylelint "**/*.{css,scss}"
+- HTML: npx hint .
+- JS: npx eslint .
 
 ### Deployment
 GH-Pages
