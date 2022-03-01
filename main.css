@@ -9,6 +9,54 @@ body {
   font-size: 20px;
 }
 
+.navbar {
+  background-color: #3c3a39;
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+  position: fixed;
+  width: 100%;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+}
+
+.nav-menu li {
+  list-style-type: none;
+}
+
+.nav-menu li a {
+  text-decoration: none;
+  color: white;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: white;
+}
+
+
 header {
   background-color: #1c1a19;
   color: white;
@@ -541,6 +589,58 @@ footer form input::placeholder {
     background-position: right bottom;
   }
 
+  .hamburger {
+    display: block;
+    margin-right: 55px;
+  }
+
+  .nav-menu li a {
+    color: #fff5e1;
+    font-size: 25px;
+    font-weight: bold;
+  }
+
+  .nav-menu li {
+    display: block;
+    padding-bottom: 3rem;
+    border-bottom: 1px solid #6f6c6b;
+    width: 100%;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .nav-menu {
+    position: fixed;
+    left: -150vh;
+    top: 50px;
+    gap: 0;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    transition: 1s;
+    background-color: #3c3a39;
+    z-index: 99;
+    height: 30rem;
+  }
+
+  .nav-item {
+    margin: 16px 0;
+  }
+
+  .nav-menu.active {
+    left: 0;
+  }
+
   .container-block {
     padding: 3rem 13rem;
   }
@@ -649,7 +749,7 @@ footer form input::placeholder {
   }
 
   .header-title {
-    padding: 17rem 25px 3rem 25px;
+    padding: 6rem 25px 3rem 25px;
     line-height: 1.2;
     display: flex;
     flex-wrap: wrap;
