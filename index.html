@@ -2,18 +2,20 @@
 <html lang="en">
 
 <head>
-     <!-- Global site tag (gtag.js) - Google Analytics -->
-     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-221124847-2"></script>
-     <script>
-       window.dataLayer = window.dataLayer || [];
-       function gtag(){dataLayer.push(arguments);}
-       gtag('js', new Date());
-
-       gtag('config', 'UA-221124847-2');
-     </script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-221124847-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-221124847-2');
+    </script>
+    
     <link rel="stylesheet" href="./main.css">
     <link rel="stylesheet" href="./click-style.css">
     <title>Portfolio - A First Review Of Portfolio</title>
@@ -21,20 +23,27 @@
 
 <body>
     <header>
-        <nav class="nav-bar">
+        <nav class="navbar">
             <div class="logoname">
                 <div class="box"></div>
-                <h2 class="reganin">Regiss M.</h2>
+                <a href="#" class="nav-branding">REGISS M.</a>
             </div>
-            <div class="menu-item">
-                <ul>
-                    <li><a href="#portfolio">Portoflio</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#info">Contact</a></li>
-                    <li><a href="#info"><img src="./Images/Icon-Mail.svg" alt="here's icon for contact us"></a></li>
-                </ul>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#portfolio" class="nav-link">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#info" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </div>
-            <div class="menu-btn"><img src="./Images/Icon-Menu.svg" alt="here's menu icon for mobile version"></div>
         </nav>
         <div class="header-title">
             <div class="logo-plat">
@@ -42,7 +51,8 @@
                     <li><a href="https://github.com/Regiss05" target=”_blank”><img src="./Images/github.svg"
                                 alt="here's github account for more informations about me" /></a></li>
                     <li><a href="https://www.linkedin.com/in/regiss-mukubiza-1bab841b3/" target=”_blank”><img
-                                src="./Images/linkedin.svg" alt="here's linkedin account attached for more details about me" /></a></li>
+                                src="./Images/linkedin.svg"
+                                alt="here's linkedin account attached for more details about me" /></a></li>
                     <li><img src="./Images/Tert.svg" alt="here's tert account for more details about me" /></li>
                     <li><a href="https://twitter.com/regissmukubiza" target=”_blank”><img src="./Images/twitter.svg"
                                 alt="here's twitter account for more details about me" /></a></li>
@@ -342,23 +352,30 @@
         <div class="footer-icon">
             <ul>
                 <li>
-                    <img src="./Images/NormalButton/Tertiary/Disabled.svg" alt="here's github account for more informations about me">
+                    <img src="./Images/NormalButton/Tertiary/Disabled.svg"
+                        alt="here's github account for more informations about me">
                 </li>
                 <li>
-                    <img src="./Images/NormalButton/Tertiary/Disabled-1.svg" alt="here's linkedin account attached for more details about me">
+                    <img src="./Images/NormalButton/Tertiary/Disabled-1.svg"
+                        alt="here's linkedin account attached for more details about me">
                 </li>
                 <li>
-                    <img src="./Images/NormalButton/Tertiary/Enabled.svg" alt="here's tert account for more details about me">
+                    <img src="./Images/NormalButton/Tertiary/Enabled.svg"
+                        alt="here's tert account for more details about me">
                 </li>
                 <li>
-                    <img src="./Images/NormalButton/Tertiary/Disabled-2.svg" alt="here's twitter account for more details about me">
+                    <img src="./Images/NormalButton/Tertiary/Disabled-2.svg"
+                        alt="here's twitter account for more details about me">
                 </li>
                 <li>
-                    <img src="./Images/NormalButton/Tertiary/Disabled-3.svg" alt="here's medium account for more info about my blogs">
+                    <img src="./Images/NormalButton/Tertiary/Disabled-3.svg"
+                        alt="here's medium account for more info about my blogs">
                 </li>
             </ul>
         </div>
     </footer>
+
+    <script src="./menu.js"></script>
 </body>
 
 </html>
