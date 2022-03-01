@@ -25,7 +25,9 @@ cd Portfolio-setup-and-mobile-version-skeleton
 Nothing
 
 ### Install
-Nothing
+- hint
+- stylelint
+- Eslint
 
 ### Usage
 Nothing
