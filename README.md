@@ -31,8 +31,9 @@ Nothing
 Nothing
 
 ### Run tests
-npx stylelint "**/*.{css,scss}"
-npx hint ./index.html 
+- npx stylelint "**/*.{css,scss}"
+- npx hint .
+- npx eslint .
 
 ### Deployment
 GH-Pages
