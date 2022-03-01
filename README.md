@@ -16,8 +16,8 @@
 ## [Live Demo](https://regiss05.github.io/Portfolio-setup-and-mobile-version-skeleton/)
 
 ## Getting Started
-
-To get a local copy up and running follow these simple example steps.
+- git clone https://github.com/Regiss05/Portfolio-setup-and-mobile-version-skeleton.git
+cd Portfolio-setup-and-mobile-version-skeleton
 
 ### Prerequisites
 
