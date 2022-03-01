@@ -56,7 +56,6 @@ body {
   background-color: white;
 }
 
-
 header {
   background-color: #1c1a19;
   color: white;
@@ -122,10 +121,6 @@ footer form ul {
 .menu-item ul {
   display: flex;
   margin-right: 3rem;
-}
-
-footer form ul li {
-  width: 100%;
 }
 
 .menu-item ul li {
@@ -598,6 +593,10 @@ footer form input::placeholder {
     color: #fff5e1;
     font-size: 25px;
     font-weight: bold;
+  }
+
+  footer form ul li {
+    width: 100%;
   }
 
   .nav-menu li {
