@@ -39,6 +39,7 @@ body {
   justify-content: space-between;
   align-items: center;
   gap: 60px;
+  margin-right: 5rem;
 }
 
 .hamburger {
@@ -781,6 +782,10 @@ footer form input::placeholder {
 
   .logo-plat ul {
     display: flex;
+  }
+
+  .modal-body {
+    display: block;
   }
 
   .header-title h1 {
