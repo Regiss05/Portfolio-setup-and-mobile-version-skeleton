@@ -6,8 +6,12 @@
   background-color: #fff;
   padding: 20px;
   z-index: 10;
-  width: 70%;
+  max-width: 90%;
   transition: 0.5s;
+}
+
+.description-modal {
+  display: flex;
 }
 
 .close-button {
@@ -35,18 +39,14 @@
 }
 
 .modal-body {
-  display: flex;
   margin-top: 30px;
 }
 
-.modal-body img {
-  width: 50%;
-}
 
 .modal-body p {
-  font-size: 16px;
+  font-size: 15px;
   padding: 0 10px;
-  margin: 20px 0 0 0;
+  margin: 0;
 }
 
 .iconsbutton {
@@ -54,7 +54,7 @@
 }
 
 .footer-popup {
-  margin: 3.7rem 10px 10px 10px;
+  margin: 1.6rem 10px 10px 10px;
 }
 
 .modal.active {

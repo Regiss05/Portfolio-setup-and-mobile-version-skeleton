@@ -494,6 +494,19 @@ ol {
 
 footer form input {
   border: none;
+  font-size: 20px;
+}
+
+footer form input:focus {
+  outline: none;
+}
+
+footer form input:invalid {
+  color: red;
+}
+
+footer form input:valid {
+  color: green;
 }
 
 footer form input::placeholder {
@@ -631,6 +644,10 @@ footer form input::placeholder {
     background-color: #3c3a39;
     z-index: 99;
     height: 30rem;
+  }
+
+  .description-modal {
+    display: grid !important;
   }
 
   .nav-item {
@@ -782,10 +799,6 @@ footer form input::placeholder {
 
   .logo-plat ul {
     display: flex;
-  }
-
-  .modal-body {
-    display: block;
   }
 
   .header-title h1 {
