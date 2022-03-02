@@ -43,9 +43,14 @@
 }
 
 .modal-body p {
-  font-size: 15px;
-  padding: 0 10px;
+  font-size: 16px;
+  padding: 0 20px;
   margin: 0;
+}
+
+.footer-popup {
+  position: absolute;
+  bottom: 10px;
 }
 
 .iconsbutton {
@@ -53,7 +58,7 @@
 }
 
 .footer-popup {
-  margin: 1.6rem 10px 10px 10px;
+  margin: 1.6rem 10px 10px 20px;
 }
 
 .modal.active {

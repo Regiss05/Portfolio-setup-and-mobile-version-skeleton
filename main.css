@@ -589,6 +589,10 @@ footer form input::placeholder {
   .footer-form {
     padding: 2rem;
   }
+
+  .modal-body p {
+    font-size: 14px !important;
+  }
 }
 
 @media (max-width: 992px) {
@@ -648,6 +652,10 @@ footer form input::placeholder {
 
   .description-modal {
     display: grid !important;
+  }
+
+  .footer-popup {
+    position: relative !important;
   }
 
   .nav-item {
