@@ -20,6 +20,10 @@ body {
   width: 100%;
 }
 
+.modal {
+  font-size: 15px;
+}
+
 .navbar a {
   text-decoration: none;
   color: white;
@@ -117,6 +121,10 @@ footer form ul {
   padding: 0;
   display: flex;
   justify-content: space-between;
+}
+
+.popupp-Container li {
+  margin-bottom: 32px;
 }
 
 .menu-item ul {
@@ -332,6 +340,13 @@ section h2 {
   background-image: url("./Images/Placeholder5.svg");
 }
 
+.popupp-Container h3 {
+    font-weight: bold;
+    font-size: 28px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
 .luang ul {
   display: flex;
   margin: 0;
@@ -533,6 +548,52 @@ footer form input::placeholder {
   bottom: 45px;
 }
 
+.form-multistories img {
+  width: 110vh;
+  height: 45vh;
+}
+
+.form-multistories button {
+  background-color: #ff6b00;
+    color: black;
+    border: none;
+    padding: 15px;
+    transition: 0.5s ease;
+    width: 8rem;
+    text-align: start;
+}
+
+.form-multistories button:hover {
+  cursor: pointer;
+}
+
+.modal-body {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.paragraph-popupp {
+  margin: 0;
+  padding: 0 20px;
+}
+
+.buttons-popp {
+  position: absolute;
+  bottom: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+}
+
 @media (min-width: 992px) and (max-width: 1100px) {
   header {
     background-size: 30%;
@@ -593,6 +654,10 @@ footer form input::placeholder {
   .modal-body p {
     font-size: 14px !important;
   }
+
+  .modal {
+    font-size: 15px;
+  }
 }
 
 @media (max-width: 992px) {
@@ -650,6 +715,10 @@ footer form input::placeholder {
     height: 30rem;
   }
 
+  .popupp-Container .close-button {
+    right: 10px !important;
+  }
+
   .description-modal {
     display: grid !important;
   }
@@ -683,6 +752,10 @@ footer form input::placeholder {
     margin-left: 4rem;
     display: grid;
     flex-wrap: wrap;
+  }
+
+  .modal {
+    font-size: 13px;
   }
 
   footer form ul {
@@ -796,6 +869,11 @@ footer form input::placeholder {
     margin-top: 24px;
   }
 
+  .buttons-popp {
+    position: relative;
+    bottom: auto;
+  }
+
   .sumbt ol li button {
     width: 10rem;
   }
@@ -838,6 +916,10 @@ footer form input::placeholder {
 
   .box-bot {
     margin-top: 3rem;
+  }
+
+  .modal-body {
+    display: grid;
   }
 
   .language {
