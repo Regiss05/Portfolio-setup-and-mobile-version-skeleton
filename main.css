@@ -228,7 +228,8 @@ section h2 {
 }
 
 .form-multistories img {
-  width: 95rem;
+  width: 110vh;
+  height: 45vh;
 }
 
 .img-text {
@@ -341,10 +342,10 @@ section h2 {
 }
 
 .popupp-Container h3 {
-    font-weight: bold;
-    font-size: 28px;
-    margin-bottom: 0;
-    padding-bottom: 0;
+  font-weight: bold;
+  font-size: 28px;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 .luang ul {
@@ -548,19 +549,14 @@ footer form input::placeholder {
   bottom: 45px;
 }
 
-.form-multistories img {
-  width: 110vh;
-  height: 45vh;
-}
-
 .form-multistories button {
   background-color: #ff6b00;
-    color: black;
-    border: none;
-    padding: 15px;
-    transition: 0.5s ease;
-    width: 8rem;
-    text-align: start;
+  color: black;
+  border: none;
+  padding: 15px;
+  transition: 0.5s ease;
+  width: 8rem;
+  text-align: start;
 }
 
 .form-multistories button:hover {
