@@ -337,10 +337,10 @@
             <div class="footer-info">
                 <h3>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.
                 </h3>
-                <form action="https://formspree.io/f/xrgjqplp" method="POST">
+                <form action="https://formspree.io/f/xrgjqplp" method="POST" name="myForm" onsubmit="return validationForm()">
                     <ul>
                         <li><input type="text" name="name" placeholder="Full name" /></li>
-                        <li><input type="email" name="email" id="email" placeholder="Email address" /></li>
+                        <li><input type="email" name="email" id="email" placeholder="Email address"></li>
                     </ul>
                     <div class="sumbt">
                         <ol>
@@ -348,7 +348,8 @@
                                 <textarea name="comment" id="comment" cols="30" rows="5" maxlength="500"
                                     placeholder="Enter your text here"></textarea>
                                 <div class="bnt-center">
-                                    <button class="btn btn-style submit-form" type="submit">Get in touch</button>
+                                    <div class="error"></div>
+                                    <button class="btn btn-style button-submit" type="submit" onclick="validateEmail()">Get in touch</button>
                                 </div>
 
                             </li>
@@ -387,6 +388,7 @@
     <script src="./JS/Modals/modals.js"></script>
     <script src="./JS/Modals/localStorage.js"></script>
     <script src="./JS/validity.js"></script>
+    <script src="./JS/Validations/validations.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
