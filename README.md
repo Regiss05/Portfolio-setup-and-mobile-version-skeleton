@@ -16,8 +16,8 @@
 ## [Live Demo](https://regiss05.github.io/Portfolio-setup-and-mobile-version-skeleton/)
 
 ## Getting Started
-
-To get a local copy up and running follow these simple example steps.
+- git clone https://github.com/Regiss05/Portfolio-setup-and-mobile-version-skeleton.git
+cd Portfolio-setup-and-mobile-version-skeleton
 
 ### Prerequisites
 
@@ -25,14 +25,17 @@ To get a local copy up and running follow these simple example steps.
 Nothing
 
 ### Install
-Nothing
+- hint
+- stylelint
+- Eslint
 
 ### Usage
 Nothing
 
 ### Run tests
-npx stylelint "**/*.{css,scss}"
-npx hint ./index.html 
+- STYLES: npx stylelint "**/*.{css,scss}"
+- HTML: npx hint .
+- JS: npx eslint .
 
 ### Deployment
 GH-Pages
