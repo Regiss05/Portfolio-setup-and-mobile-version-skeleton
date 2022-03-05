@@ -15,9 +15,11 @@
 
         gtag('config', 'UA-221124847-2');
     </script>
-    
+
     <link rel="stylesheet" href="./main.css">
     <link rel="stylesheet" href="./click-style.css">
+    <link rel="stylesheet" href="./CSS/modal.css">
+
     <title>Portfolio - A First Review Of Portfolio</title>
 </head>
 
@@ -94,7 +96,13 @@
                             <li>Ruby</li>
                         </ul>
                     </div>
-                    <button class="btn btn-style" type="button">See Project</button>
+                    <button data-modal-target="#modal" class="btn btn-style" type="button">See Project</button>
+                    <div class="modal" id="modal">
+                        <div class="popupp-Container">
+                            <button data-close-button class="close-button">&times;</button>
+                        </div>
+                    </div>
+                    <div id="overlay"></div>
                 </div>
             </section>
             <div class="container-form">
@@ -329,10 +337,10 @@
             <div class="footer-info">
                 <h3>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.
                 </h3>
-                <form action="https://formspree.io/f/xrgjqplp" method="POST">
+                <form action="https://formspree.io/f/xrgjqplp" method="POST" name="myForm" onsubmit="return validationForm()">
                     <ul>
-                        <li><input type="text" name="name" placeholder="Full name" maxlength="30" required /></li>
-                        <li><input type="email" name="email" placeholder="Email address" required /></li>
+                        <li><input type="text" name="name" placeholder="Full name" /></li>
+                        <li><input type="email" name="email" id="email" placeholder="Email address"></li>
                     </ul>
                     <div class="sumbt">
                         <ol>
@@ -340,7 +348,8 @@
                                 <textarea name="comment" id="comment" cols="30" rows="5" maxlength="500"
                                     placeholder="Enter your text here"></textarea>
                                 <div class="bnt-center">
-                                    <button class="btn btn-style submit-form" type="submit">Get in touch</button>
+                                    <div class="error"></div>
+                                    <button class="btn btn-style button-submit" type="submit" onclick="validateEmail()">Get in touch</button>
                                 </div>
 
                             </li>
@@ -375,7 +384,13 @@
         </div>
     </footer>
 
-    <script src="./menu.js"></script>
+    <script src="./JS/menu.js"></script>
+    <script src="./JS/Modals/modals.js"></script>
+    <script src="./JS/Modals/localStorage.js"></script>
+    <script src="./JS/validity.js"></script>
+    <script src="./JS/Validations/validations.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>

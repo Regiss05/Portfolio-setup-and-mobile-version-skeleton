@@ -20,6 +20,10 @@ body {
   width: 100%;
 }
 
+.modal {
+  font-size: 15px;
+}
+
 .navbar a {
   text-decoration: none;
   color: white;
@@ -39,6 +43,7 @@ body {
   justify-content: space-between;
   align-items: center;
   gap: 60px;
+  margin-right: 5rem;
 }
 
 .hamburger {
@@ -116,6 +121,10 @@ footer form ul {
   padding: 0;
   display: flex;
   justify-content: space-between;
+}
+
+.popupp-Container li {
+  margin-bottom: 32px;
 }
 
 .menu-item ul {
@@ -219,7 +228,8 @@ section h2 {
 }
 
 .form-multistories img {
-  width: 95rem;
+  width: 110vh;
+  height: 45vh;
 }
 
 .img-text {
@@ -329,6 +339,13 @@ section h2 {
 
 .pupopp-form4 {
   background-image: url("./Images/Placeholder5.svg");
+}
+
+.popupp-Container h3 {
+  font-weight: bold;
+  font-size: 28px;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 .luang ul {
@@ -493,6 +510,19 @@ ol {
 
 footer form input {
   border: none;
+  font-size: 20px;
+}
+
+footer form input:focus {
+  outline: none;
+}
+
+footer form input:invalid {
+  color: red;
+}
+
+footer form input:valid {
+  color: green;
 }
 
 footer form input::placeholder {
@@ -517,6 +547,47 @@ footer form input::placeholder {
 .btn-pos {
   position: relative;
   bottom: 45px;
+}
+
+.form-multistories button {
+  background-color: #ff6b00;
+  color: black;
+  border: none;
+  padding: 15px;
+  transition: 0.5s ease;
+  width: 8rem;
+  text-align: start;
+}
+
+.form-multistories button:hover {
+  cursor: pointer;
+}
+
+.modal-body {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.paragraph-popupp {
+  margin: 0;
+  padding: 0 20px;
+}
+
+.buttons-popp {
+  position: absolute;
+  bottom: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  padding: 0;
+  margin: 0;
+  align-items: center;
 }
 
 @media (min-width: 992px) and (max-width: 1100px) {
@@ -575,6 +646,14 @@ footer form input::placeholder {
   .footer-form {
     padding: 2rem;
   }
+
+  .modal-body p {
+    font-size: 14px !important;
+  }
+
+  .modal {
+    font-size: 15px;
+  }
 }
 
 @media (max-width: 992px) {
@@ -632,6 +711,18 @@ footer form input::placeholder {
     height: 30rem;
   }
 
+  .popupp-Container .close-button {
+    right: 10px !important;
+  }
+
+  .description-modal {
+    display: grid !important;
+  }
+
+  .footer-popup {
+    position: relative !important;
+  }
+
   .nav-item {
     margin: 16px 0;
   }
@@ -657,6 +748,10 @@ footer form input::placeholder {
     margin-left: 4rem;
     display: grid;
     flex-wrap: wrap;
+  }
+
+  .modal {
+    font-size: 13px;
   }
 
   footer form ul {
@@ -770,6 +865,11 @@ footer form input::placeholder {
     margin-top: 24px;
   }
 
+  .buttons-popp {
+    position: relative;
+    bottom: auto;
+  }
+
   .sumbt ol li button {
     width: 10rem;
   }
@@ -812,6 +912,10 @@ footer form input::placeholder {
 
   .box-bot {
     margin-top: 3rem;
+  }
+
+  .modal-body {
+    display: grid;
   }
 
   .language {
