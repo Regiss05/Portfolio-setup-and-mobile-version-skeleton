@@ -1,5 +1,3 @@
-const poppuyContainer = document.querySelector('.popupp-Container');
-
 const popupps = [
   {
     id: 1,
@@ -56,7 +54,7 @@ const popupps = [
     name: 'Website Protfolio',
     description:
       "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-    featured_image: './Images/Plholder02.svg',
+    featuredimage: './Images/Plholder02.svg',
     technologies: ['html', 'Bootstrap', 'Ruby on rails'],
     linkVersion: 'See Live',
     linkSource: 'See Source',
@@ -68,17 +66,16 @@ const renderPopupp = (popupp) => {
     id,
     name,
     description,
-    featured_image,
+    featuredimage,
     technologies,
     linkVersion,
-    linkSource,
   } = popupp;
 
   const container = document.createElement('div');
   container.classList.add('container-poppup');
 
   container.innerHTML = `
-  <div data-id=${id} class='pupopp lg-screen pupopp-form${id}' style="background:url(${featured_image});">
+  <div data-id=${id} class='pupopp lg-screen pupopp-form${id}' style="background:url(${featuredimage});">
   <div class="section-art sm-screen">
       <h2>${name}</h2>
       <p>
@@ -98,11 +95,10 @@ const renderPopupp = (popupp) => {
   return container;
 };
 
-const renderPopupps = (str) => {
-  console.log(str);
+const renderPopupps = () => {
   const container = document.querySelector('.container-block');
 
-  let popuppsElement = document.createElement('div');
+  const popuppsElement = document.createElement('div');
   const containerFull = document.createElement('div');
   containerFull.classList.add('container-full');
   popuppsElement.appendChild(containerFull);
@@ -112,17 +108,13 @@ const renderPopupps = (str) => {
     containerFull.appendChild(renderPopupp(popupp));
     container.appendChild(popuppsElement);
   });
-
-  console.log(container, 'kkkk');
 };
 renderPopupps();
 
 const showModal = (id, isMultipost) => {
   const modal = document.getElementById('myModal');
   modal.style.display = 'block';
-  console.log(isMultipost);
-  if(isMultipost) {
-    console.log('here');
+  if (isMultipost) {
     document.getElementById('model-dynamic-content').innerHTML = `
     <div class='pupopp-item'>
     <img src="./Images/Placeholder.svg" alt="here's placeholder image where the alternatives text goes">
@@ -143,14 +135,16 @@ const showModal = (id, isMultipost) => {
       <a data-modal-target="#modal" class="btn btn-style btn-style-btn " href="" target="_blank">See Source</a>
   </div>
   </div>
-    `
+    `;
   } else {
-  const item = popupps.find(p => p.id.toString() === id);
-  const { name, description, featured_image, technologies, linkSource, linkVersion } = item;
+    const item = popupps.find((p) => p.id.toString() === id);
+    const {
+      name, description, featuredimage, technologies, linkVersion,
+    } = item;
 
-  document.getElementById('model-dynamic-content').innerHTML = `
+    document.getElementById('model-dynamic-content').innerHTML = `
   <div class='pupopp-item'>
-  <div data-id=${id} class='pupopp lg-screen pupopp-form${id}' style="background:url(${featured_image}); width: 97vh;"></div>
+  <div data-id=${id} class='pupopp lg-screen pupopp-form${id}' style="background:url(${featuredimage}); width: 97vh;"></div>
   <div class="section-art sm-screen">
       <h2>${name}</h2>
       <p>
@@ -165,10 +159,14 @@ const showModal = (id, isMultipost) => {
       <a data-modal-target="#modal" class="btn btn-style btn-style-btn " onclick="showModal('${id}')" id="" href="${linkVersion}" target="_blank">${linkVersion}</a>
   </div>
   </div>
-  `;}
+  `;
+  }
 };
 
 const closeModal = () => {
   const modal = document.getElementById('myModal');
   modal.style.display = 'none';
-}
+};
+
+document.getElementById('close-modal').onclick = closeModal;
+document.getElementById('open-modal').onclick = showModal;
