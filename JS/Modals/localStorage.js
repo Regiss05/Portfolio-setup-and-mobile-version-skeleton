@@ -4,7 +4,7 @@ const popupps = [
     name: 'Profesional Art Printing Data More',
     description:
       "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-    featured_image: './Images/Placeholder5.svg',
+    featuredImage: './Images/Placeholder5.svg',
     technologies: ['html', 'Bootstrap', 'Ruby on rails'],
     linkVersion: 'See Live',
     linkSource: 'See Source',
@@ -14,7 +14,7 @@ const popupps = [
     name: 'Profesional Art Printing Data More',
     description:
       "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-    featured_image: './Images/Plholder03.svg',
+    featuredImage: './Images/Plholder03.svg',
     technologies: ['html', 'Bootstrap', 'Ruby on rails'],
     linkVersion: 'See Live',
     linkSource: 'See Source',
@@ -24,7 +24,7 @@ const popupps = [
     name: 'Website Protfolio',
     description:
       "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-    featured_image: './Images/Plholder02.svg',
+    featuredImage: './Images/Plholder02.svg',
     technologies: ['html', 'Bootstrap', 'Ruby on rails'],
     linkVersion: 'See Live',
     linkSource: 'See Source',
@@ -34,7 +34,7 @@ const popupps = [
     name: 'Profesional Art Printing Data More',
     description:
       "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-    featured_image: './Images/Placeholder5.svg',
+    featuredImage: './Images/Placeholder5.svg',
     technologies: ['html', 'Bootstrap', 'Ruby on rails'],
     linkVersion: 'See Live',
     linkSource: 'See Source',
@@ -44,7 +44,7 @@ const popupps = [
     name: 'Data Dashboard Healthcare',
     description:
       "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-    featured_image: './Images/Plholder03.svg',
+    featuredImage: './Images/Plholder03.svg',
     technologies: ['html', 'Bootstrap', 'Ruby on rails'],
     linkVersion: 'See Live',
     linkSource: 'See Source',
@@ -54,7 +54,7 @@ const popupps = [
     name: 'Website Protfolio',
     description:
       "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-    featuredimage: './Images/Plholder02.svg',
+    featuredImage: './Images/Plholder02.svg',
     technologies: ['html', 'Bootstrap', 'Ruby on rails'],
     linkVersion: 'See Live',
     linkSource: 'See Source',
@@ -66,7 +66,7 @@ const renderPopupp = (popupp) => {
     id,
     name,
     description,
-    featuredimage,
+    featuredImage,
     technologies,
     linkVersion,
   } = popupp;
@@ -75,7 +75,7 @@ const renderPopupp = (popupp) => {
   container.classList.add('container-poppup');
 
   container.innerHTML = `
-  <div data-id=${id} class='pupopp lg-screen pupopp-form${id}' style="background:url(${featuredimage});">
+  <div data-id=${id} class='pupopp lg-screen pupopp-form${id}' style="background:url(${featuredImage});">
   <div class="section-art sm-screen">
       <h2>${name}</h2>
       <p>
@@ -139,12 +139,12 @@ const showModal = (id, isMultipost) => {
   } else {
     const item = popupps.find((p) => p.id.toString() === id);
     const {
-      name, description, featuredimage, technologies, linkVersion,
+      name, description, featuredImage, technologies, linkVersion,
     } = item;
 
     document.getElementById('model-dynamic-content').innerHTML = `
   <div class='pupopp-item'>
-  <div data-id=${id} class='pupopp lg-screen pupopp-form${id}' style="background:url(${featuredimage}); width: 97vh;"></div>
+  <div data-id=${id} class='pupopp lg-screen pupopp-form${id}' style="background:url(${featuredImage}); width: 97vh;"></div>
   <div class="section-art sm-screen">
       <h2>${name}</h2>
       <p>
@@ -168,5 +168,5 @@ const closeModal = () => {
   modal.style.display = 'none';
 };
 
-document.getElementById('close-modal').onclick = closeModal;
-document.getElementById('open-modal').onclick = showModal;
+document.getElementById('open-modal').onclick(showModal);
+document.getElementById('close-modal').onclick(closeModal);
